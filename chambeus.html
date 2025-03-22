@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ChambeusCoding</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background container */
+        #background-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('your-background-image.jpg'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Ensures it's behind all other content */
+        }
+
+        #logo-div {
+            width: 100%;
+            height: 50px;
+            padding-left: 2%;
+            line-height: 50px;
+            margin-bottom: 10px;
+            background-color: rgb(0, 0, 0);
+            text-align: left;
+            position: relative; /* Keeps the buttons positioned inside this div */
+        }
+
+        #nav-div {
+            width: 100%;
+            min-height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: bisque;
+        }
+
+        #header-div {
+            max-width: 100%;
+            min-height: 500px;
+            min-width: 500px;
+            line-height: 50px;
+        }
+
+        #main-div {
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        #sidebar-div {
+            width: 20%;
+            min-height: 300px;
+            text-align: center;
+            line-height: 300px;
+            background-color: rgb(77, 5, 5);
+        }
+
+        #body-div {
+            width: 80%;
+            min-height: 500px;
+            text-align: center;
+            line-height: 25px;
+            background-color: darkred;
+            padding: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer-div {
+            width: 100%;
+            min-height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: rgb(8, 8, 8);
+        }
+
+        #back-div {
+            width: 100%;
+            min-width: 1920px;
+            min-height: 1080px;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        html, body, header {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        /* Additional styling for header texts */
+        .container-text {
+            color: rgb(255, 51, 0);
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        .author-text, .transcript-text {
+            color: rgb(211, 9, 9);
+            text-align: left;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background div -->
+    <div id="background-div">
+        <img src="Untitled design (2).png">
+    </div>
+
+    <div id="logo-div">
+        <img src="Shirtfffff.png" alt="logo" width="125" height="50">
+        <p style="color: rgb(255, 51, 0); text-align:center;"></p>
+    </div>
+
+    <div id="container">
+        <p class="container-text">ChambeusCoding</p>
+        <p class="author-text">By Chambeus</p>
+        <p class="transcript-text">A Chambeus Coding Production</p>
+    </div>
+
+    <div id="header-div">
+        <img src="efj.png" alt="Sample Image" width="1920" height="1000">
+    </div>
+
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+            <img src="Screenshot (19)hhhh.png" alt="SidePic" width="450" height="500">
+        </div>
+
+        <div id="body-div">
+            <h2>The 442nd in Action</h2>
+            <p style="color: rgb(9, 148, 241); text-align:left; font-weight: bold; font-size: 24px;"> 
+                ChambeusCoding:<br>
+                    I like little projects like this where I can combine coding and creativity<br>
+                    <br>
+                    in my work. If you want to look at all the projects and code if done over this<br>
+                    <br>
+                    last year then click the link. (Mind that most of my repositories are private)
+            </p>
+        </div>
+    </div>
+
+    <div id="footer-div">
+        <p style="color: rgb(233, 6, 6); text-align:right; font-weight: bold; font-size: 12px;"> 
+        This is just something to do because I am bored
+        </p>
+    </div>
+</body>
+</html>
+

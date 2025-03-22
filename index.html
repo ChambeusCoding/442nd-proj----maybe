@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -59,9 +59,9 @@
 
          /* Button styling */
          .redirect-button2 {
-            position: absolute;
+            position: relative;
             top: 10px;
-            right: 10px;
+            left: 20px;
             background-color: rgb(255, 51, 0);
             color: white;
             padding: 10px 20px;
@@ -71,7 +71,239 @@
         }
 
         .redirect-button:hover {
-            background-color: rgb(200, 45, 0);
+            background-color: rgb(255, 217, 0);
+        }
+
+
+
+        #nav-div {
+            width: 100%;
+            min-height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: bisque;
+        }
+
+        #header-div {
+            max-width: 100%;
+            min-height: 500px;
+            min-width: 500px;
+            line-height: 50px;
+        }
+
+        #main-div {
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        #sidebar-div {
+            width: 20%;
+            min-height: 300px;
+            text-align: center;
+            line-height: 300px;
+            background-color: rgb(77, 5, 5);
+        }
+
+        #body-div {
+            width: 80%;
+            min-height: 500px;
+            text-align: center;
+            line-height: 25px;
+            background-color: darkred;
+            padding: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer-div {
+            width: 100%;
+            min-height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: rgb(8, 8, 8);
+        }
+
+        #back-div {
+            width: 100%;
+            min-width: 1920px;
+            min-height: 1080px;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        html, body, header {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        /* Additional styling for header texts */
+        .container-text {
+            color: rgb(255, 51, 0);
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        .author-text, .transcript-text {
+            color: rgb(211, 9, 9);
+            text-align: left;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background div
+    <div id="background-div">
+        <img src="1231456.jpg">
+    </div>
+
+    <div id="logo-div">
+        <img src="Shirtfffff.png" alt="logo" width="125" height="50">
+        <p style="color: rgb(255, 51, 0); text-align:center;"></p>
+
+        Redirect button
+        <button class="redirect-button" onclick="window.location.href='debug.html';">Debug</button>
+    
+        <button class="redirect-button2" onclick="window.location.href='MyCode.txt';">How I Did It</button>
+    </div>
+
+    <div id="container">
+        <p class="container-text">The 442nd Regimental Combat Team</p>
+        <p class="author-text">By Chambeus</p>
+        <p class="transcript-text">A Chambeus Coding Production</p>
+    </div>
+
+    <div id="header-div">
+        <img src="france.jpg" alt="Sample Image" width="1920" height="1000">
+    </div>
+
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+            <img src="44nd-regiment.jpg" alt="SidePic" width="450" height="500">
+        </div>
+
+        <div id="body-div">
+            <h2>The 442nd in Action</h2>
+            <p style="color: rgb(9, 148, 241); text-align:left; font-weight: bold; font-size: 24px;"> 
+                The 442nd in chronological order:<br>
+                    -Call to Arms<br>
+                    -Camp Shelby, Mississippi<br>
+                    -Lost Battalion Rescue<br>
+                    -Fighting in Italy<br>
+                    -The Defense of Southern france<br> 
+                    -Return to the US and Move to Legacy<br>
+                    <br>
+                *Feared Axis sabatoge stemmed from Pearl Harbor resulting in a lack a trust of loyalty from many Japanese Americans at the beginning of WWII<br>
+                <br>
+                *So President Roosevelt signed the Executive order 9066 resulting in the internment of Americans from Japanese dissent resulting in many to suffer in these american camps.<br>
+                <br>
+                *They were given a chance to join the US Army and over 10,000 men joined up<br>
+                <br>
+                *Over 2k left Camp Shelby Mississippi for Southern France and Northern Italy<br>
+                <br>
+                *Multiple campaigns done by them including:<br>
+                    -Po Valley campaigns<br>
+                    -Gothic Line campaigns<br>
+                    -Rhineland Campaign<br>
+
+
+
+                
+            </p>
+        </div>
+    </div>
+
+    <div id="footer-div">
+        <p style="color: rgb(233, 6, 6); text-align:right; font-weight: bold; font-size: 12px;"> 
+        This is just something to do because I am bored
+        </p>
+    </div>
+</body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ChambeusCoding</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background container */
+        #background-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('your-background-image.jpg'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Ensures it's behind all other content */
+        }
+
+        #logo-div {
+            width: 100%;
+            height: 50px;
+            padding-left: 2%;
+            line-height: 50px;
+            margin-bottom: 10px;
+            background-color: rgb(0, 0, 0);
+            text-align: left;
+            position: relative; /* Keeps the buttons positioned inside this div */
+        }
+
+        /* Button container for positioning buttons side by side */
+        .redirect-buttons-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex; /* Align buttons horizontally */
+            gap: 10px; /* Adds space between buttons */
+        }
+
+        /* Button styling */
+        .redirect-button, .redirect-button2, .redirect-button3 {
+            background-color: rgb(255, 51, 0);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Button hover effect */
+        .redirect-button:hover, .redirect-button2:hover, .redirect-button3:hover {
+            background-color: rgb(255, 217, 0);
         }
 
         #nav-div {
@@ -174,11 +406,12 @@
         <img src="Shirtfffff.png" alt="logo" width="125" height="50">
         <p style="color: rgb(255, 51, 0); text-align:center;"></p>
 
-        <!-- Redirect button -->
-        <button class="redirect-button" onclick="window.location.href='debug.html';">Debug</button>
-    </div>
-        
-        <button class="redirect-button2" onclick="window.location.href='MyCode.txt';">How I Did It</button>
+        <!-- Redirect buttons container -->
+        <div class="redirect-buttons-container">
+            <button class="redirect-button" onclick="window.location.href='debug.html';">Debug</button>
+            <button class="redirect-button2" onclick="window.location.href='MyCode.txt';">How I Did It</button>
+            <button class="redirect-button3" onclick="window.location.href='chambeus.html'";>ChambeusCoding</button>
+        </div>
     </div>
 
     <div id="container">
@@ -204,33 +437,30 @@
                     -Camp Shelby, Mississippi<br>
                     -Lost Battalion Rescue<br>
                     -Fighting in Italy<br>
-                    -The Defense of Southern france<br> 
+                    -The Defense of Southern France<br> 
                     -Return to the US and Move to Legacy<br>
                     <br>
-                *Feared Axis sabatoge stemmed from Pearl Harbor resulting in a lack a trust of loyalty from many Japanese Americans at the beginning of WWII<br>
+                *Feared Axis sabotage stemmed from Pearl Harbor resulting in a lack of trust in loyalty from many Japanese Americans at the beginning of WWII<br>
                 <br>
-                *So President Roosevelt signed the Executive order 9066 resulting in the internment of Americans from Japanese dissent resulting in many to suffer in these american camps.<br>
+                *So President Roosevelt signed the Executive Order 9066 resulting in the internment of Americans from Japanese descent, resulting in many suffering in these American camps.<br>
                 <br>
-                *They were given a chance to join the US Army and over 10,000 men joined up<br>
+                *They were given a chance to join the US Army, and over 10,000 men joined up.<br>
                 <br>
-                *Over 2k left Camp Shelby Mississippi for Southern France and Northern Italy<br>
+                *Over 2k left Camp Shelby, Mississippi for Southern France and Northern Italy.<br>
                 <br>
                 *Multiple campaigns done by them including:<br>
                     -Po Valley campaigns<br>
                     -Gothic Line campaigns<br>
                     -Rhineland Campaign<br>
-
-
-
-                
             </p>
         </div>
     </div>
 
     <div id="footer-div">
-        <p style="color: rgb(233, 6, 6); text-align:right; font-weight: bold; font-size: 12px;"> 
-        This is just something to do because I am bored
+        <p style="color: rgb(233, 6, 6); text-align:center; font-weight: bold; font-size: 18px;"> 
+        Hopefully by this time I passed my certification tests and im a certified html and jav programmer bc why not
         </p>
     </div>
 </body>
 </html>
+
